@@ -1,0 +1,13 @@
+{
+  "name": "section3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "learnCreateServer.js",
+  "scripts": {
+    "start": "node learnCreateServer",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
