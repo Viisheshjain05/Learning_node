@@ -4,10 +4,13 @@
   "description": "",
   "main": "learnCreateServer.js",
   "scripts": {
-    "start": "node learnCreateServer",
+    "start": "nodemon learnCreateServer",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
 }
