@@ -49,7 +49,7 @@ const requestHandler = (req, res) => {
         .split("=")[1]
         //3 Form Data //? We cannot use replaceAll because it is not supported by node yet we need to check if function or prototype is supported by node or not before running
         .replace(/\+/g, " ");
-      fs.writeFileSync("InputData.txt", inputData);
+      fs.writeFileSync(`${__dirname}/InputData.txt`, inputData);
     });
 
     //4 Redirect // * Status Code 302 Is use to redirect the Url Without this you cannot redirect page t0 other location

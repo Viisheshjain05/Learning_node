@@ -18,9 +18,12 @@ const http = require("http");
 //* Components
 const routes = require("./routes");
 
-//1 Creating Server //* It will Create Server and wait for upcomming request so to responce the value
-const server = http.createServer(routes);
+const learnToCreateServer = (props) => {
+  //1 Creating Server //* It will Create Server and wait for upcomming request so to responce the value
+  const server = http.createServer(routes);
 
-//1 Creating Server //* This will create a loop of listen command keep running so when we visit page we can get the request from the web and get it to server
+  //1 Creating Server //* This will create a loop of listen command keep running so when we visit page we can get the request from the web and get it to server
+  server.listen(3000, "localhost");
+};
 
-server.listen(3000, "localhost");
+module.exports = learnToCreateServer;
