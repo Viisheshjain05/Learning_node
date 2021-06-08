@@ -7,7 +7,7 @@ const UserRoutes = (req, res) => {
   const method = req.method;
 
   //* Console Important Info from request
-  // consoleData(req);
+  consoleData(req);
 
   if (url === "/") {
     res.setHeader("content-type", "text/html");
