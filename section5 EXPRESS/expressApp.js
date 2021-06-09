@@ -8,7 +8,7 @@
 // INDEX
 // 1) middleware
 // 2) Sending Data
-// 3)
+// 3) Npm Local Project as dependency
 // 4)
 // 5)
 
@@ -16,14 +16,17 @@
 // const http = require("http");
 
 // Libraries
-const express = require("express");
-// const classnames = require("classname");
-const { classnames } = require("../utils/venderExport");
+// const express = require("express");
+
+// 3) Npm Local //* importing package from Local Project for deep dive
+const { classnames, express } = require("../utils/venderExport");
 
 const ExpressApp = (props) => {
   // 1) middleware EXPRESS INTI //* Init and Create an Express application
   const app = express();
-  console.log(classnames("this is from Classname"));
+
+  // 3) Npm Local //* Testing is npm Local project wokings
+  classnames(["Hapo", { saf: false }], { poo: true });
 
   // 1) middleware //* Use allow to create a middleware where "next" Allows to get to another middleware only when it is passed.
 
