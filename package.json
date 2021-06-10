@@ -11,7 +11,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "classnames": "file:.\\local_dependencies\\vender\\classnames\\"
+    "body-parser": "file:.\\local_dependencies\\vender\\body-parser\\",
+    "classnames": "file:.\\local_dependencies\\vender\\classnames\\",
+    "express": "file:.\\local_dependencies\\vender\\express\\"
   },
   "devDependencies": {
     "jsdoc": "^3.6.7",
