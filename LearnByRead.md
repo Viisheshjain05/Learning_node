@@ -16,20 +16,38 @@ Todo - get to know about symlink to connect local dependencies and npm package -
 
    By Explicitly Adding each local project they do not install all package dependency into root node_module folder they have them in express or package folder node_modules and if you run yarn or npm after del node_module in root it will not work properly as it install all the dependency in the root node_module folder itself this way if you can edit file in you vender or local dependency folder and it will be updated in the node_modules copy too so you can view changes in the package also as it is linked to root node_modules.
 
-      process -
+   process -
 
-      1. create project init
-      2. install all dependencies not in local folder
-      3. install all local package in thier respective folders
-      4. now use npm install ../local-folder to link and save only project copy into the root node_modules
-      5. thats it
+   1. create project init
+   2. install all dependencies not in local folder
+   3. install all local package in thier respective folders
+   4. now use npm install ../local-folder to link and save only project copy into the root node_modules
+   5. thats it
 
-      Do Nots -
+   Do Nots -
 
-      1. after adding package.json -> "classnames": "file:utils/vender/classnames",
-      2. do not run npm install as it will install all classnames dependencies into root node_module folder and do not link
-      3. always sepreately add file local dependencies or use package [yalc]
+   1. after adding package.json -> "classnames": "file:utils/vender/classnames",
+   2. do not run npm install as it will install all classnames dependencies into root node_module folder and do not link
+   3. always sepreately add file local dependencies or use package [yalc]
 
    FILE - package.json -> "classnames": "file:utils/vender/classnames",
 
    ref article - https://www.stefanjudis.com/today-i-learned/npm-install-supports-local-packages/
+
+EX -
+"body-parser": "file:utils/vender/body-parser",
+"classnames": "file:utils/vender/classnames",
+"express": "file:utils/vender/express"
+
+## How to document functions in vscode using jsdoc
+
+/\*\*
+
+- @param {string} name personal detail
+- @returns {string} whateveer is added
+  \*/
+
+const returnName = ({ name, ...rest }) => {
+return name;
+};
+console.log(returnName("this is it"));

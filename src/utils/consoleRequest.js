@@ -1,3 +1,8 @@
+/**
+ * @param {string} req personal detail
+ * @returns {console} whateveer is added
+ */
+
 const consoleReq = (req) => {
   const { method, url, headers } = req;
 

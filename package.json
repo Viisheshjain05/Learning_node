@@ -4,18 +4,15 @@
   "description": "",
   "main": "learnCreateServer.js",
   "scripts": {
-    "start": "nodemon app",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon index",
+    "doc": "jsdoc -c jsdoc.json"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "body-parser": "file:utils/vender/body-parser",
-    "classnames": "file:utils/vender/classnames",
-    "express": "file:utils/vender/express"
-  },
+  "dependencies": {},
   "devDependencies": {
+    "jsdoc": "^3.6.7",
     "nodemon": "^2.0.7"
   }
 }
