@@ -5,7 +5,9 @@
   "main": "learnCreateServer.js",
   "scripts": {
     "start": "nodemon index",
-    "doc": "jsdoc -c jsdoc.json"
+    "doc": "jsdoc -c jsdoc.json",
+    "test-chai": "node ./test/readingFirstTest.js",
+    "test": "node ./test/readingFirstTest.js"
   },
   "keywords": [],
   "author": "",
@@ -16,7 +18,9 @@
     "express": "file:.\\local_dependencies\\vender\\express\\"
   },
   "devDependencies": {
+    "chai": "^4.3.4",
     "jsdoc": "^3.6.7",
+    "mocha": "^9.0.0",
     "nodemon": "^2.0.7"
   }
 }

@@ -19,13 +19,13 @@
 // const express = require("express");
 
 // 3) Npm Local //* importing package from Local Project for deep dive
-const express = require("express");
+const app = require("express").express();
 
 const ExpressApp = (props) => {
   // 1) middleware EXPRESS INTI //* Init and Create an Express application
   // 3) Npm Local //* Testing is npm Local project wokings
   
-  const app = express();
+  // const app = express();
   // 1) middleware //* Use allow to create a middleware where "next" Allows to get to another middleware only when it is passed.
 
   
