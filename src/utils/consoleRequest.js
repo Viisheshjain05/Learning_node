@@ -1,6 +1,6 @@
 /**
- * @param {string} req personal detail
- * @returns {console} whateveer is added
+ * @param {string} req Send Request || Responce object to get output of
+ * @returns {console} method Url and headers formated
  */
 
 const consoleReq = (req) => {

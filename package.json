@@ -4,10 +4,10 @@
   "description": "",
   "main": "learnCreateServer.js",
   "scripts": {
-    "start": "nodemon index",
+    "start": "nodemon index.js",
     "doc": "jsdoc -c jsdoc.json",
     "test-chai": "node ./test/readingFirstTest.js",
-    "test": "node ./test/readingFirstTest.js"
+    "test": "mocha"
   },
   "keywords": [],
   "author": "",

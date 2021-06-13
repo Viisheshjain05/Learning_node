@@ -41,11 +41,11 @@ EX -
 
 ## How to document functions in vscode using jsdoc
 
-/\*\*
-
-- @param {string} name personal detail
-- @returns {string} whateveer is added
-  \*/
+/**
+*
+* @description  {string} name personal detail
+* @returns {string} whateveer is added
+*/
 
 const returnName = ({ name, ...rest }) => {
 return name;

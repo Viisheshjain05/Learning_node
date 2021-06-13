@@ -9,7 +9,9 @@
 // const LearnCreateServerASSIGNMENT = require("./src/section3-4/Assignment1/createUser");
 
 // 3) // ? Section[5] express
-const ExpressApp = require("./src/section5 EXPRESS/expressApp");
+// const ExpressApp = require("./src/section5 EXPRESS/expressApp");
+// const MiddlewareFunc = require("./src/section5 EXPRESS/Assignment/middlewareFunc");
+const HandlingRequest = require("./src/section5 EXPRESS/HandlingRequest");
 
 /* *****************************
  ?       FILES  START     
@@ -23,4 +25,6 @@ const ExpressApp = require("./src/section5 EXPRESS/expressApp");
 // LearnCreateServerASSIGNMENT();
 
 // 3) // ? Section[5]
-ExpressApp();
+// ExpressApp();
+// MiddlewareFunc();
+HandlingRequest();

@@ -1,8 +1,12 @@
 var expect = require("chai").expect;
 
 /**
+ * Respresent A Startup test file
+ * @constructor
  * @description check tests util is working
+ * 
  */
+
 expect(true).to.be.true;
 
 /**
@@ -17,6 +21,6 @@ const checkTitle = (title) => {
 };
 
 expect(checkTitle("This is my string Title")).to.be.a("string");
-expect(checkTitle("This is my string Title")).to.equal(
+expect(checkTitle("This Is My String Title")).to.equal(
   "This Is My String Title"
 );

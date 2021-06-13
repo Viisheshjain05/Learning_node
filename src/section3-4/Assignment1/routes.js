@@ -44,6 +44,7 @@ const UserRoutes = (req, res) => {
     res.statusCode = 302;
     res.setHeader("Location", "/user");
     const body = [];
+   
     req.on("data", (chunk) => {
       body.push(chunk);
     });

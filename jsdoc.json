@@ -1,8 +1,11 @@
 {
-    "plugins": [],
+    "plugins": [
+        "plugins/markdown"
+    ],
     "recurseDepth": 10,
     "source": {
         "include": [
+            ".idea/",
             "test/",
             "src/",
             "index.js"
