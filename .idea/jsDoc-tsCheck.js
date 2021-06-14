@@ -1,10 +1,14 @@
 // @ts-check
+/**
+ * @namespace myNameSpace
+ */
 
 /**
  *  petName ts-check Type checking
  * @type {string}
+ * @memberof MyNamespace
+ * @inner
  */
-
 const petName = "423";
 
 /**
@@ -58,4 +62,24 @@ const DogType = {
   isGirlFriend: false,
 };
 
+/**
+ * @typedef {Object} DogConsole To Console all details of dog
+ * @property {string} name  Name Of Dog
+ * @property {number|string} [ id = null ] To seprate dog Has number or string or null {optional}
+ * @property {number} age add age of dog
+//  * @returns {cosole} data to console
+ */
 
+/**
+ * Function to console All the details of Dog
+ * @type {function}
+ */
+const GlobalRemovalVariable = ({ name, id, age }) => {
+  /**``
+   *  dogName this is dog name
+   * @type {string}
+   */
+  const dogName = name;
+
+  return console.log(`dog name is ${dogName} id : ${id} and age : ${age}`);
+};

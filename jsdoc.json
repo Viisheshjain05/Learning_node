@@ -26,7 +26,7 @@
         "monospaceLinks": false
     },
     "opts": {
-        "template": "./template/jsdoc-template/",
+        "template": "./template/braintree/",
         "encoding": "utf8",
         "recurse": true,
         "destination": "./docs/",
