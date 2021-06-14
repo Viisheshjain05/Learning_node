@@ -1,0 +1,20 @@
+/* *****************************
+ ?   Header HEAD START     
+ * ****************************** */
+
+html {
+  color: yellow;
+}
+
+* {
+  background-color: black;
+}
+
+body {
+  background-color: whitesmoke;
+  font-size: 2em;
+}
+
+form {
+  background-color: red;
+}
