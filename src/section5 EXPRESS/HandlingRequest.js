@@ -1,6 +1,7 @@
 //* Libraries
 const express = require("express");
-const urlencoded = require("body-parser/lib/types/urlencoded");
+// const urlencoded = require("body-parser/lib/types/urlencoded");
+const { urlencoded } = require("body-parser");
 
 //* Node Libraries
 const fs = require("fs");
@@ -20,8 +21,7 @@ const HandleRequest = (props) => {
   const app = express();
 
   /**
-   * @constant bodyParser using library to parse all the data
-   * @description using it as a parser for all the METHOD as POST, GET, PUT etc so to get data in the better format then app.on("data", chunks)
+   * @constant urlencoded using it as a body-parser for all the METHOD as POST, GET, PUT etc so to get data in the better format then app.on("data", chunks)
    * @description we need to use it in every request so we are adding it at top with next() so it want block are routes and get used in all the routes
    * @returns {urlencoded} After using in app.use(urlencoded()) you can access data into req.body() as it will pass data into req object into body object as an object format
    */
@@ -62,6 +62,7 @@ const HandleRequest = (props) => {
     // req.on("end", () => {
     //   const inputData = Buffer.concat(body).toString().split("=")[1];
     /**
+     * @type {string}
      * @param {path} required add path where you want to store file
      * @example `${__dirname}/inputFile.txt`
      * @example path.join(__dirname, "../", "inputFile.txt"),
