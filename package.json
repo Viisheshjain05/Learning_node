@@ -1,13 +1,21 @@
 {
-  "name": "section3",
+  "name": "learn_create_test__node-apps",
   "version": "1.0.0",
-  "description": "",
+  "description": "Learn And building ground for major projects",
   "main": "server.js",
+  "contributors": [
+    "Viishesh Jain"
+  ],
+  "repository": {
+    "type": "private",
+    "directory": "",
+    "url": "To Be Added later"
+  },
   "scripts": {
     "start": "nodemon index.js",
     "server": "nodemon adminServer.js",
     "doc": "jsdoc -c jsdoc.json",
-    "open-doc": "open-cli ./docs/index.html",
+    "open-doc": "npm run doc && open-cli ./docs/index.html",
     "open-doc-cli": "./node_modules/.bin/open-cli ./docs/index.html",
     "test-chai": "node ./test/readingFirstTest.js",
     "test": "mocha"
@@ -18,6 +26,8 @@
   "dependencies": {
     "body-parser": "file:.\\local_dependencies\\vender\\body-parser\\",
     "classnames": "file:.\\local_dependencies\\vender\\classnames\\",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
     "ejs": "^3.1.6",
     "express": "file:.\\local_dependencies\\vender\\express\\"
   },

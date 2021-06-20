@@ -1,15 +1,10 @@
 const route = require("express").Router();
+const adminRoutes = require("../controller/admin");
 
-route.get("/add-product", (req, res, next) => {
-  res.render("addProduct");
-});
+route.get("/add-product", adminRoutes.getAddProduct);
 
-route.post("/add-product", (req, res, next) => {
-  res.status(300).render("index");
-});
+route.post("/add-product", adminRoutes.postAddProduct);
 
-route.get("/view-product", (req, res, next) => {
-  res.render("viewProduct", { title: "New Books" });
-});
+route.post("/edit-product", adminRoutes.postAddProduct);
 
 module.exports = route;

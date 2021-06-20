@@ -2,6 +2,14 @@
 
 > : **Scripts**
 
+<!--  -->
+<h3 style="color:white;">Passing Arrguments</h3>
+<br />
+> && use and parameter to run multiple scripts one after other
+
+<!--  -->
+<h3 style="color:white;">Scripts Added</h3>
+<br />
 > ## Documentation Scripts
 
 1. `doc` - uses [jsdoc](https://www.npmjs.com/package/jsdoc) to create js documentation from comments in files
@@ -12,4 +20,3 @@
 
 1. `test-chai` - run first test using [chai](https://www.npmjs.com/package/chai) library
 2. `test` - run all tests found in test folder using mocha [mocha](https://www.npmjs.com/package/mocha) library
-
