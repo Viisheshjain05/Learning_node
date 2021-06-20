@@ -2,9 +2,9 @@
 const express = require("express");
 // const urlencoded = require("body-parser/lib/types/urlencoded");
 const { urlencoded } = require("body-parser");
-const adminRoutes = require("./routes/admin");
-const shopRoutes = require("./routes/shop");
-const ErrorPage = require("./routes/404");
+const adminRoutes = require("./route/admin");
+const shopRoutes = require("./route/shop");
+const ErrorPage = require("./route/404");
 //* Node Libraries
 const path = require("path");
 
@@ -12,7 +12,6 @@ const path = require("path");
  * @description Shows how to handle POST, PUT, GET Request in express by sending reply from form
  * @param {formOutput} Message We will use app.post for Reciveing POST Method
  * @param {message} POST We will use app.get() for recieving GET method
- *
  */
 
 const HandleRequest = (props) => {

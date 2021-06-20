@@ -2,7 +2,7 @@ const route = require("express").Router();
 const path = require("path");
 const fs = require("fs");
 
-route.get("/add-user", (req, res, next) => {
+route.get(path.join(__dirname, "view", "addProduct.html"), (req, res, next) => {
   res.sendFile(path.join(__dirname, "..", "view", "addUser.html"));
 });
 

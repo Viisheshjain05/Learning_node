@@ -8,11 +8,15 @@
 // const LearnCreateServer = require("./src/section3-4/learnCreateServer");
 // const LearnCreateServerASSIGNMENT = require("./src/section3-4/Assignment1/createUser");
 
-// 3) // ? Section[5] express
-// const MiddlewareFunc = require("./src/section5 EXPRESS/Assignment/middlewareFunc");
-const FullUserRoutes = require("./src/section5 EXPRESS/Assignment/FullUserRoutesAss/app");
-// const ExpressApp = require("./src/section5 EXPRESS/expressApp");
-// const HandlingRequest = require("./src/section5 EXPRESS/HandlingRequest");
+// 3) // ? Section[5, 6] express
+// const MiddlewareFunc = require("./src/section5-6 EXPRESS/Assignment/BasicMiddleware/middlewareFunc");
+// const FullUserRoutes = require("./src/section5-6 EXPRESS/Assignment/FullUserRoutesAss/app");
+// const ExpressApp = require("./src/section5-6 EXPRESS/expressApp");
+// const HandlingRequest = require("./src/section5-6 EXPRESS/HandlingRequest");
+// const LocalDataVar = require("./src/section5-6 EXPRESS/LocalDataVar");
+
+// 4) // ? Complete Projects
+const ProductStore = require("./src/ProductStore/app");
 
 /* *****************************
  ?       FILES  START     
@@ -25,9 +29,12 @@ const FullUserRoutes = require("./src/section5 EXPRESS/Assignment/FullUserRoutes
 // LearnCreateServer();
 // LearnCreateServerASSIGNMENT();
 
-// 3) // ? Section[5]
+// 3) // ? Section[5, 6]
 // ExpressApp();
 // MiddlewareFunc();
 // HandlingRequest();
-FullUserRoutes();
+// FullUserRoutes();
+// LocalDataVar();
 
+//  ? Mix Section Learning with Project
+ProductStore();

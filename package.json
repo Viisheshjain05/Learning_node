@@ -2,25 +2,30 @@
   "name": "section3",
   "version": "1.0.0",
   "description": "",
-  "main": "learnCreateServer.js",
+  "main": "server.js",
   "scripts": {
     "start": "nodemon index.js",
+    "server": "nodemon adminServer.js",
     "doc": "jsdoc -c jsdoc.json",
+    "open-doc": "open-cli ./docs/index.html",
+    "open-doc-cli": "./node_modules/.bin/open-cli ./docs/index.html",
     "test-chai": "node ./test/readingFirstTest.js",
     "test": "mocha"
   },
   "keywords": [],
-  "author": "",
+  "author": "Viishesh Jain",
   "license": "ISC",
   "dependencies": {
     "body-parser": "file:.\\local_dependencies\\vender\\body-parser\\",
     "classnames": "file:.\\local_dependencies\\vender\\classnames\\",
+    "ejs": "^3.1.6",
     "express": "file:.\\local_dependencies\\vender\\express\\"
   },
   "devDependencies": {
     "chai": "^4.3.4",
     "jsdoc": "^3.6.7",
     "mocha": "^9.0.0",
-    "nodemon": "^2.0.7"
+    "nodemon": "^2.0.7",
+    "open-cli": "^7.0.0"
   }
 }
