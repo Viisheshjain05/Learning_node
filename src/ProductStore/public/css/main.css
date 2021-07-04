@@ -1,0 +1,40 @@
+/* * {
+  color: red;
+}
+
+*/
+body {
+  margin: 1em;
+}
+
+/* *****************************
+ ?   Form Add Product HEAD START     
+ * ****************************** */
+
+.form-add-product {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.3em;
+  text-align: center;
+}
+.form-add-product > * {
+  padding: 1em;
+}
+
+.form-add-product input {
+  font-size: 1em;
+}
+
+.form-add-product__submit > button {
+  font-size: 1.3em;
+  color: black;
+  background: hsl(270deg 20% 70%);
+  border: none;
+  padding: 0.5em 1em;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.form-add-product__submit > button:hover {
+  background: hsl(270deg 30% 80%);
+}

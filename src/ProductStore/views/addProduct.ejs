@@ -1,35 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
+<% include ./partials/header.ejs %>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
+    </head>
 
-<body>
+    <body>
+        <% include ./partials/navbar.ejs %>
 
-    <header>
-        <nav>
-            <ul>
-                <li><a href="/"> Home </a> </li>
-                <li><a href="/add-product"> Add product </a> </li>
-                <li><a href="/view-product"> View product </a> </li>
-            </ul>
-        </nav>
-    </header>
+            <h1 style="text-align: center; margin-bottom:1.5em;">Add Product Form</h1>
 
-    <h1>User Page With External Css File and form </h1>
+            <main>
 
-    <form action="/add-product" method="POST">
+                <form action="/add-product" method="POST" class="form-add-product">
+                    <div class="form-add-product__name">
 
-        <input type="text" name="item">
-        <button type="submit"> Submit product </button>
-    </form>
+                        <label for="item-name">Product Name</label>
+                        <input type="text" name="item-name">
+                    </div>
 
+                    <div class="form-add-product__price">
+                        <label for="item-price">Product Price</label>
+                        <input type="text" name="item-price">
+                    </div>
 
+                    <div class="form-add-product__submit">
+                        <button type="submit"> Submit product </button>
+                    </div>
+                </form>
 
-</body>
+            </main>
+    </body>
 
-</html>
+    </html>

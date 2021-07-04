@@ -10,7 +10,6 @@ require("dotenv").config({ path: `./.env` });
 
 //* Node Libs
 const path = require("path");
-// const fs = require("fs");
 
 //* Components | Routes
 const adminRoutes = require("./route/admin");

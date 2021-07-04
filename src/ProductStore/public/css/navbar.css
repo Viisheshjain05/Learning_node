@@ -1,0 +1,15 @@
+.nav__head {
+  display: flex;
+  font-size: 1.2em;
+  background-color: wheat;
+}
+
+.nav__head li {
+  padding: 1em;
+  text-transform: capitalize;
+  list-style-type: none;
+}
+
+.nav__head li a {
+  text-decoration: auto;
+}
