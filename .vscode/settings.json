@@ -1,3 +1,9 @@
 {
-    "files.autoSave": "afterDelay"
+    "files.autoSave": "afterDelay",
+    "files.exclude": {
+        ".gitignore": true,
+        "template": true,
+        "test": true,
+        "yarn.lock": true
+    }
 }

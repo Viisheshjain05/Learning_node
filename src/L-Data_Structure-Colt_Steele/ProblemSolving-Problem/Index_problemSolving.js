@@ -10,12 +10,11 @@
 // 4)
 // 5)
 
-const FrequencyCounter = require("./ProblemSolving");
+const FrequencyCounter = require("./FrequencyCounterPattern");
 
 const ProblemSolving = (props) => {
   /** @description Use when there is comparision for multiple data and inputs */
-  FrequencyCounter;
+  FrequencyCounter();
 };
 
 module.exports = ProblemSolving;
-

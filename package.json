@@ -12,7 +12,7 @@
     "url": "To Be Added later"
   },
   "scripts": {
-    "start": "nodemon index.js",
+    "start": "nodemon index.js -a Max",
     "server": "nodemon adminServer.js",
     "doc": "jsdoc -c jsdoc.json",
     "open-doc": "npm run doc && open-cli ./docs/index.html",
@@ -29,7 +29,8 @@
     "cors": "^2.8.5",
     "dotenv": "^10.0.0",
     "ejs": "^3.1.6",
-    "express": "file:.\\local_dependencies\\vender\\express\\"
+    "express": "file:.\\local_dependencies\\vender\\express\\",
+    "local_minimist": "file:local_dependencies/vender/minimist"
   },
   "devDependencies": {
     "chai": "^4.3.4",

@@ -12,19 +12,15 @@
 // 5)
 
 const ColtSteel_dataStructure = require("./L-Data_Structure-Colt_Steele/index_Colt-steele");
+const Max_nodeJs = require("./L-Node_js-max/index");
 
-const SrcIndex = (props) => {
-  ColtSteel_dataStructure();
+const SrcIndex = ({ author }) => {
+  author === "max" ? Max_nodeJs() : ColtSteel_dataStructure();
 };
 
 module.exports = SrcIndex;
 
-
-
-
-
-
-//! Check Links And uses 
+//! Check Links And uses
 /* *****************************
  ?       IMPORTS  START     
  * ****************************** */
