@@ -1,5 +1,5 @@
 {
-  "name": "body-parser",
+  "name": "local_body-parser",
   "description": "Node.js body parsing middleware",
   "version": "1.19.0",
   "contributors": [

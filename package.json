@@ -12,7 +12,8 @@
     "url": "To Be Added later"
   },
   "scripts": {
-    "start": "nodemon index.js -a Max",
+    "start": "nodemon index.js -a colte",
+    "start-max": "nodemon index.js -a max",
     "server": "nodemon adminServer.js",
     "doc": "jsdoc -c jsdoc.json",
     "open-doc": "npm run doc && open-cli ./docs/index.html",

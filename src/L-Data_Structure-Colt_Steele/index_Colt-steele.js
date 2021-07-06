@@ -12,7 +12,7 @@
 // 4)
 // 5)
 
-const ProblemSolving = require("./ProblemSolving-Problem/Index_problemSolving");
+const ProblemSolving = require("./ProblemSolving-Patterns/Index_PS-Patterns");
 
 const ColtSteel_dataStructure = (props) => {
   ProblemSolving();

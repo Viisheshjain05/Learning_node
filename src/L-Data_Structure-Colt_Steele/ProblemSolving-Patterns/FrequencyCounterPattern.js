@@ -1,4 +1,4 @@
-// ? Problem Solving Patterns Frequency COunter
+// ? better way to compare two or more variables with Frequency Counter pattern
 
 // * FileName           -   FrequencyCounter
 // * Contain properties - [Space, Time, BigO - Comparision];
@@ -10,6 +10,7 @@ const FrequencyCounter = (props) => {
    */
 
   //! Multiple Number With Frequency Counter Pattern
+
   const MultipleNumber = () => {
     /**
      * !Example Problem 1
@@ -21,6 +22,12 @@ const FrequencyCounter = (props) => {
      * @param {Array} arr2 Second array to compare with
      * @param {number} multiple Arr2 has el Multiple of Arr1
      */
+    /**
+     * ! Stats
+     *  Time Complexity - O(n^2 + n^2) - O(n^2)
+     *  Auxilary Space Complexity - O(2n + 1 ) - O(n)
+     * */
+
     const MultipleNumber_naive = (arr1 = [], arr2 = [], multiple = 2) => {
       //? 1) Check if arr1.length === arr2.length
       if (arr1.length !== arr2.length) {
@@ -29,17 +36,19 @@ const FrequencyCounter = (props) => {
 
       //? 2) Loop Through El to Check Each value
       for (let i = 0; i < arr1.length; i++) {
+        // IndexOf time Complexity = O(n)
         const indexVal = arr2.indexOf(arr1[i] * multiple);
 
         if (indexVal === -1) {
           return false;
         } else {
+          // splice Time Complexity - O(n)
           arr2.splice(indexVal, 1);
         }
       }
       return true;
     };
-    console.log(MultipleNumber_naive([1, 2, 4], [4, 2, 8], 2));
+    //! console.log(MultipleNumber_naive([1, 2, 4], [4, 2, 8], 2));
 
     //! REFACTORED Solution 1
     /**
@@ -53,6 +62,12 @@ const FrequencyCounter = (props) => {
      * @param {Array} arr2 Second array to compare with
      * @param {number} multiple Arr2 has el Multiple of Arr1
      */
+
+    /**
+     * ! Stats
+     *  Time Complexity - O(3n) - O(n)
+     *  Auxilary Space Complexity - O(2n) - O(n)
+     * */
 
     const MultipleNumber_refactor = (arr1 = [], arr2 = [], multiple = 2) => {
       if (arr1.length !== arr2.length) {
@@ -83,15 +98,16 @@ const FrequencyCounter = (props) => {
       return true;
     };
 
-    console.log(MultipleNumber_refactor([1, 2, 4], [4, 2, 8], 2));
+    //! console.log(MultipleNumber_refactor([1, 2, 4], [4, 2, 8], 2));
   };
-  //? Entry point For Multiple Number
-  // MultipleNumber();
 
-  //! Anagram Problem With Frequency Counter Pattern
+  //? Entry point For Multiple Number
+  //! MultipleNumber();
+
+  //? Anagram Problem With Frequency Counter Pattern
 
   /**
-   * !Example Problem 2
+   * ?Example Problem 2
    * @description Create Function Anagram - Create a working anagram
    */
 
@@ -103,21 +119,69 @@ const FrequencyCounter = (props) => {
      */
 
     //! Example Solution 2 Naive
-    const Anagram_naive = (props) => {
-      console.log(props);
-      return false;
-    };
 
-    console.log(Anagram_naive("aes"));
+    /**
+     * ! Stats
+     *  Time Complexity - O(n)
+     *  Auxilary Space Complexity - O(2n) - O(n)
+     * */
+
+    const Anagram_naive = (ow, cw) => {
+      if (ow.length !== cw.length) return false;
+
+      const cwIterator = {};
+      const owIterator = {};
+
+      for (const O of ow) {
+        //? It was checking if as 0 - false , undefined - false so it never make it way until value is a Number from  cwIterator[O]
+        cwIterator[O] = (cwIterator[O] || 0) + 1;
+      }
+
+      for (const C of cw) {
+        owIterator[C] = (owIterator[C] || 0) + 1;
+      }
+
+      const valueStatus = Object.entries(cwIterator).map((e) => {
+        // console.log(`e[0] : ${e[0]} , e[1] : ${e[1]} `);
+        // console.log(
+        //   `ow[e[0]] : ${owIterator[e[0]]}, State : ${owIterator[e[0]] === e[1]}`
+        // );
+        if (owIterator[e[0]] !== e[1]) {
+          return false;
+        }
+        return true;
+      });
+      return !valueStatus.includes(false);
+    };
+    //! console.log(Anagram_naive("atm", "mat"));
 
     // //! Example Solution 2 Refactor
-    // const Anagram_refactor = (props) => {
-    //   console.log(props);
-    // };
 
-    // console.log(Anagram_refactor("aes"));
+    /**
+     * ! Stats
+     *  Time Complexity - O(n)
+     *  Auxilary Space Complexity - O(n)
+     * */
+
+    //? Objective To create with 2 loops only
+    const Anagram_refactor = (ow, cw) => {
+      if (ow.length !== cw.length) return false;
+
+      const lookup = {};
+      for (const O of ow) lookup[O] ? lookup[O]++ : (lookup[O] = 1);
+
+      for (const C of cw) {
+        // ?  || lookup[C] === 0 - Not needed as 0 holds value of false - as converted to true and return false
+        if (!lookup[C]) return false;
+        lookup[C]--;
+      }
+      // console.log(lookup);
+
+      return true;
+    };
+
+    //! console.log(Anagram_refactor("seaasc", "csaaes"));
   };
-
-  Anagram();
 };
+
 module.exports = FrequencyCounter;
