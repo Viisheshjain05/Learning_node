@@ -11,11 +11,13 @@
 // 4) Clone Repo
 // 5)
 
-const ColtSteel_dataStructure = require("./L-Data_Structure-Colt_Steele/index_Colt-steele");
+const ColtSteel_dataStructure = require("./L-DS_Algo-Colt_Steele/index_Colt-steele");
 const Max_nodeJs = require("./L-Node_js-max/index");
+const Max_CleanCode = require("./L-Clean_code_max/index_clean-code-max");
 
 const SrcIndex = ({ author }) => {
-  author === "max" ? Max_nodeJs() : ColtSteel_dataStructure();
+  // author === "max" ? Max_nodeJs() : ColtSteel_dataStructure();
+  Max_CleanCode();
 };
 
 module.exports = SrcIndex;

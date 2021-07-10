@@ -13,10 +13,11 @@
 // 5)
 
 const ProblemSolving = require("./ProblemSolving-Patterns/Index_PS-Patterns");
+const Recursion = require("./Recursion/index_recursion");
 
 const ColtSteel_dataStructure = (props) => {
-  ProblemSolving();
-
+  // ProblemSolving();
+  Recursion();
 };
 
 module.exports = ColtSteel_dataStructure;

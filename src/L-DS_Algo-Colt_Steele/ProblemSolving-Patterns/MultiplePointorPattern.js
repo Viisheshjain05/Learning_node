@@ -5,22 +5,20 @@
 // * Contain Problems - [SumZero, Problem2];
 
 const MutiplePointer = (props) => {
-  //? ----------------------------- Problem1 START -----------------------------
+  //? ----------------------------- SumZero START -----------------------------
 
-  //! Problem1 With Multiple Pointer Pattern
+  //! SumZero With Multiple Pointer Pattern
 
-  const Problem1 = () => {
+  const SumZero = () => {
     /**
-     * !Example Problem 1
-     *
-     * @description Create Function MultipleNumber - compare two array where second array has all the values square of first array , order does not matter
+     * !Example SumZero
+     * @description Create Function SumZero - RETURN array of binumber where sum of binumber is zero
      */
 
     /**
      * Multiple Number Naive
-     * @param {Array} arr1 first array
-     * @param {Array} arr2 Second array to compare with
-     * @param {number} multiple Arr2 has el Multiple of Arr1
+     * @param {Array} arr Sorted Array with numbers -ve to +ve
+     * @param {number} MethodType Solution number as naive solution can also be done in multipe wayesF
      */
 
     /**
@@ -29,10 +27,33 @@ const MutiplePointer = (props) => {
      *  Auxilary Space Complexity - O(2n + 1 ) - O(n)
      */
 
-    const Problem1_naive = () => {};
-    //! SOL -  console.log(Problem1_naive([1, 2, 4], [4, 2, 8], 2));
+    const SumZero_naive = (arr, MethodType = 1) => {
+      if (MethodType === 1) {
+        const sortedArr = [];
+        for (el1 of arr) {
+          for (el2 of arr) {
+            if (el1 + el2 === 0) {
+              sortedArr.push([el1, el2]);
+            }
+          }
+        }
+        return sortedArr.slice((sortedArr.length + 1) / 2);
+      }
 
-    //! REFACTORED Solution 1
+      if (MethodType === 2) {
+        const sortedArr = [];
+        for (let i = 0; i < arr.length; i++) {
+          for (let j = i + 1; j < arr.length; j++) {
+            if (arr[i] + arr[j] === 0) sortedArr.push([arr[i], arr[j]]);
+          }
+        }
+        return sortedArr;
+      }
+    };
+
+    //! SOL - console.log(SumZero_naive([-5, -4, -3, -1, 0, 2, 5, 4, 6, 7, 8], 2));
+
+    //! REFACTORED Solution SumZero
     /**
      * Multiple Number Refactored
      * @param {Array} arr1 first array
@@ -46,12 +67,27 @@ const MutiplePointer = (props) => {
      *  Auxilary Space Complexity - O(2n) - O(n)
      * */
 
-    const Problem1_refactor = () => {};
-    //! SOL - console.log(Problem1_refactor([1, 2, 4], [4, 2, 8], 2));
+    const SumZero_refactor = (arr = []) => {
+      const left = 0;
+      const right = arr.length - 1;
+
+      while (left > right) {
+        
+      }
+
+      // for (let i = 0; i < array.length; i++) {
+      //   return (element = array[i]);
+      // }
+
+      return false;
+    };
+    //! SOL -
+    console.log(SumZero_refactor([-4, -2, -1, 0, 1, 2, 4]));
   };
 
-  //? Entry point For Problem1
-  //! Problem1();
+  //? Entry point For SumZero
+  // !
+  SumZero();
 
   //? ----------------------------- Problem2 START -----------------------------
 
