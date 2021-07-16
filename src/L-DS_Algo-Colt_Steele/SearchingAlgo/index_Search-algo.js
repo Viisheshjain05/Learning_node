@@ -1,6 +1,21 @@
-function linearSearch(arr, val) {
-    for (let i = 0; i < arr.length; i++) if (arr[i] === val) return i;
-    return -1;
-  }
+// ? Data Structure and Algorithm Cource From Colt Steele
 
-  console.log(linearSearch([10, 152, 151, 15], 15));
+// * FileName           -   index File
+// * Contain Problem Solving properties - [ FrequencyCounter,  ];
+// * Contain Data Structures properties - [ ];
+// * Contain Algorithms properties - [ ];
+
+// INDEX
+// 1) Problem Solving
+// 2)
+// 3)
+// 4)
+// 5)
+
+const SearchingAlgo = require("./searchingAlgo");
+
+const searchAlgorithm = (props) => {
+  SearchingAlgo();
+};
+
+module.exports = searchAlgorithm;

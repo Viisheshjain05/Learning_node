@@ -91,6 +91,19 @@ const MutiplePointer = (props) => {
 
   //? Entry point For Problem2
   //! Problem2();
+
+  //! Simple Problem Recursion
+  /**
+   * Prob function
+   * @description example Recursion func - it Prob the string
+   * @example Prob("Solution") => noitulos
+   * @param {string} str String to Prob
+   */
+
+  const Prob = (str) => {
+    // Base func
+  };
+  //! SOL - console.log(Prob(3, 3));
 };
 
 module.exports = MutiplePointer;

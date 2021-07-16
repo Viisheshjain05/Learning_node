@@ -14,10 +14,12 @@
 
 const ProblemSolving = require("./ProblemSolving-Patterns/Index_PS-Patterns");
 const Recursion = require("./Recursion/index_recursion");
+const SearchingAlgo = require("./SearchingAlgo/index_Search-algo");
 
 const ColtSteel_dataStructure = (props) => {
   // ProblemSolving();
-  Recursion();
+  // Recursion();
+  SearchingAlgo();
 };
 
 module.exports = ColtSteel_dataStructure;

@@ -16,8 +16,8 @@ const Max_nodeJs = require("./L-Node_js-max/index");
 const Max_CleanCode = require("./L-Clean_code_max/index_clean-code-max");
 
 const SrcIndex = ({ author }) => {
-  // author === "max" ? Max_nodeJs() : ColtSteel_dataStructure();
-  Max_CleanCode();
+  author === "max" ? Max_nodeJs() : ColtSteel_dataStructure();
+  // Max_CleanCode();
 };
 
 module.exports = SrcIndex;
