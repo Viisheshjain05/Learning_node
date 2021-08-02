@@ -19,9 +19,10 @@
 // const express = require("express");
 
 // 3) Npm Local //* importing package from Local Project for deep dive
-const app = require("express").express();
+const express = require("express");
 
 const ExpressApp = (props) => {
+  const app = express();
   // 1) middleware EXPRESS INTI //* Init and Create an Express application
   // 3) Npm Local //* Testing is npm Local project wokings
 

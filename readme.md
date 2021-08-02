@@ -12,3 +12,11 @@
 <!-- //! Component Holder Project -->
 3. Create `Component Holder` And tester
 4. Create gatsby Site for Blogs and Main Service Selling
+
+
+
+,
+    "express": "file:.\\local_dependencies\\vender\\express\\",
+    "classnames": "file:.\\local_dependencies\\vender\\classnames\\",
+    "local_minimist": "file:local_dependencies/vender/minimist"
+  

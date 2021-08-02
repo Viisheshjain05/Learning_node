@@ -15,11 +15,13 @@
 const ProblemSolving = require("./ProblemSolving-Patterns/Index_PS-Patterns");
 const Recursion = require("./Recursion/index_recursion");
 const SearchingAlgo = require("./SearchingAlgo/index_Search-algo");
+const SortingAlgo = require("./SortingAlgo/index");
 
 const ColtSteel_dataStructure = (props) => {
   // ProblemSolving();
   // Recursion();
-  SearchingAlgo();
+  // SearchingAlgo();
+  SortingAlgo();
 };
 
 module.exports = ColtSteel_dataStructure;

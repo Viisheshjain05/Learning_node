@@ -1,5 +1,5 @@
 {
-  "name": "learn_create_test__node-apps",
+  "name": "learn_node",
   "version": "1.0.0",
   "description": "Learn And building ground for major projects",
   "main": "server.js",
@@ -25,13 +25,13 @@
   "author": "Viishesh Jain",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "file:.\\local_dependencies\\vender\\body-parser\\",
-    "classnames": "file:.\\local_dependencies\\vender\\classnames\\",
+    "body-parser": "file:local_dependencies/vender/body-parser",
     "cors": "^2.8.5",
     "dotenv": "^10.0.0",
     "ejs": "^3.1.6",
-    "express": "file:.\\local_dependencies\\vender\\express\\",
-    "local_minimist": "file:local_dependencies/vender/minimist"
+    "express": "file:local_dependencies/vender/express",
+    "local_classnames": "file:local_dependencies/vender/classnames",
+    "minimist": "file:local_dependencies/vender/minimist"
   },
   "devDependencies": {
     "chai": "^4.3.4",

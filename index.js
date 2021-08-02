@@ -1,4 +1,4 @@
-const args = require("local_minimist")(process.argv);
+const args = require("minimist")(process.argv);
 const SrcIndex = require("./src/index_src");
 
 let DEFAULT_authorArr = ["max", "colte"];
